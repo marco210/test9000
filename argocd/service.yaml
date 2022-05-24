@@ -6,7 +6,6 @@ spec:
   selector:
     app: myapp
   ports:
-  - port: 9000
-    protocol: TCP
+  - port: 9000    
     targetPort: 9000
     nodePort: 9000
