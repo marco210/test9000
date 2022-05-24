@@ -6,6 +6,12 @@ import (
 
 func main() {
 	router := gin.Default()
+	
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "test GET func",
+		})
+	})
 	router.GET("/index", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "Hello mother fucker",
